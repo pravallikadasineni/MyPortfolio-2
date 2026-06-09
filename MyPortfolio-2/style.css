@@ -1,0 +1,47 @@
+/* CSS Variables */
+:root {
+    --primary-blue: #3498db;
+    --dark-bg: #2c3e50;
+    --text-white: #ffffff;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--dark-bg);
+    color: var(--text-white);
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Box Styling */
+.box {
+    background-color: var(--primary-blue);
+    color: var(--text-white);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Mobile Responsive (1 column) */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
